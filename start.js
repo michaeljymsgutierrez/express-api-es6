@@ -3,7 +3,7 @@
  */
 
 require("babel-register")({
-  presets: ["env"]
+	presets: ["env"]
 });
 
 module.exports = require("./server.js");
