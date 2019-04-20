@@ -24,7 +24,7 @@ if(ENV.mode === "development"){
 	/**
 	 * SSL directory is where you ssl key and cert pem lives
 	 */
-	ENV.ssl_directory: null
+	ENV.ssl_directory: null;
 }
 
 
