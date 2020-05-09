@@ -1,9 +1,7 @@
-/**
- * Main Entry Point for Es version
- */
+// Main Start Script
 
 require("babel-register")({
-	presets: ["env"]
+  presets: ["env"]
 });
 
 module.exports = require("./server.js");
