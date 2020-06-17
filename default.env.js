@@ -6,6 +6,10 @@ let ENV = {
   mode: "development",
   port: "3000",
   host: "127.0.0.1",
+  dbhost: "localhost",
+  dbuser: "dbuser",
+  dbname: "dbname",
+  dbpass: "dbpass",
   ssl_directory: null
 };
 

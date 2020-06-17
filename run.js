@@ -2,8 +2,8 @@ import https from "https";
 import fs from "fs";
 import ENV from "./env";
 
-class Run {
-  server(app) {
+const RUN = {
+  server: function(app) {
     // Config for running express/node server DEV || PROD
 
     if (ENV.mode && ENV.mode === "development") {
@@ -34,6 +34,6 @@ class Run {
       });
     }
   }
-}
+};
 
-export default Run;
+export default RUN;

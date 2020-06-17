@@ -1,20 +1,22 @@
 // Checker Module
 // Generate message string based on data passed
 
-import Helper from "./helper";
+import HELPER from "./helper";
 
-const HELPER = new Helper();
-
-class Checker {
-  OBJECT(data) {
+const CHECKER = {
+  object: function(data, exclude) {
     // Validate if object properties are not null || empty string
     let fields = [];
     let message = null;
-    const objkey = Object.keys(data);
 
-    objkey.forEach(property => {
-      if (data[property] === "" || data[property] === null) {
-        fields.push(property);
+    const objkeys = Object.keys(data);
+    const excludeKeys = exclude === null ? [] : exclude.split(",");
+
+    objkeys.forEach(property => {
+      if (excludeKeys.indexOf(property) === -1) {
+        if (data[property] === "" || data[property] === null) {
+          fields.push(property);
+        }
       }
     });
 
@@ -30,8 +32,8 @@ class Checker {
       message = fields[0];
     }
 
-    return message ? `${HELPER.CAPITALIZE(message)} can't be blank.` : true;
+    return message ? `${HELPER.capitalize(message)} can't be blank.` : true;
   }
-}
+};
 
-export default Checker;
+export default CHECKER;

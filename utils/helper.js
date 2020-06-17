@@ -1,21 +1,21 @@
 // Helper Module
 // Contains string and formatting functions
 
-class Helper {
-  VALIDATE_EMAIL(email) {
+const HELPER = {
+  validate_email: function(email) {
     // Validate email string format
     const TESTER = /\S+@\S+\.\S+/;
 
     return TESTER.test(email);
-  }
+  },
 
-  CAPITALIZE(text) {
+  capitalize: function(text) {
     // Capitalize string
-    let capitalize = text.toLocaleLowerCase().split("");
+    const capitalize = text.toLocaleLowerCase().split("");
     capitalize[0] = capitalize[0].toLocaleUpperCase();
 
     return capitalize.join("", ",");
   }
-}
+};
 
-export default Helper;
+export default HELPER;

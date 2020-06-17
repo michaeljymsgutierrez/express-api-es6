@@ -3,9 +3,9 @@
 import mysql from "mysql";
 import ENV from "../../env";
 
-class MySql {
-  DBAccess(query, param) {
-    let connection = mysql.createConnection({
+const MYSQL = {
+  execute: function(query, param) {
+    const connection = mysql.createConnection({
       host: ENV.dbhost,
       user: ENV.dbuser,
       password: ENV.dbpass,
@@ -26,6 +26,6 @@ class MySql {
 
     return promise;
   }
-}
+};
 
-export default MySql;
+export default MYSQL;

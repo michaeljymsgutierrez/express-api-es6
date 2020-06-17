@@ -1,7 +1,8 @@
 // Main Start Script
 
-require("babel-register")({
-  presets: ["env"]
+require("@babel/register")({
+  presets: ["@babel/preset-env"],
+  plugins: ["@babel/plugin-transform-runtime"]
 });
 
 module.exports = require("./server.js");
