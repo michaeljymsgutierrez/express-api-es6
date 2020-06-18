@@ -8,8 +8,8 @@ const TABLES = {
     // Initialize Main Database Tables
 
     MYSQL.execute(QUERY.createTableUsers, [])
-      .then(this.log("tbl_users", true))
-      .catch(this.log("tbl_users", false));
+      .then(success => this.log("tbl_users", true))
+      .catch(error => this.log("tbl_users", false));
   },
 
   log: function(tableName, successStatus) {
