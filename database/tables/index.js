@@ -6,6 +6,8 @@ import QUERY from "../query";
 const TABLES = {
   init: function() {
     // Initialize Main Database Tables
+
+    MYSQL.execute(QUERY.createTableUsers, []);
   },
 
   log: function(tableName, successStatus) {
