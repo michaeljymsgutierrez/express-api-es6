@@ -10,6 +10,7 @@ const QUERY = {
     "password VARCHAR(255)," +
     "password_confirmation VARCHAR(255)," +
     "contact_number VARCHAR(255)," +
+    "image_url VARCHAR(255)," +
     "role VARCHAR(255)," +
     "status VARCHAR(255)," +
     "created_at DATETIME DEFAULT CURRENT_TIMESTAMP," +
