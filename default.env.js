@@ -6,12 +6,12 @@ let ENV = {
   mode: "development",
   port: "3000",
   host: "127.0.0.1",
-  dbhost: "localhost",
-  dbuser: "dbuser",
-  dbname: "dbname",
-  dbpass: "dbpass",
-  ssl_directory: null,
-  secret_key: "secretkey"
+  db_host: "localhost",
+  db_user: "root",
+  db_name: "express",
+  db_pass: "jsdeveloper7011",
+  secret_key: "secretkey",
+  ssl_directory: null
 };
 
 // Override values here if necessary

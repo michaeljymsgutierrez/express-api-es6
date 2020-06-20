@@ -6,10 +6,10 @@ import ENV from "../../env";
 const MYSQL = {
   execute: function(query, param) {
     const connection = mysql.createConnection({
-      host: ENV.dbhost,
-      user: ENV.dbuser,
-      password: ENV.dbpass,
-      database: ENV.dbname
+      host: ENV.db_host,
+      user: ENV.db_user,
+      password: ENV.db_pass,
+      database: ENV.db_name
     });
 
     const promise = new Promise((resolve, reject) => {
