@@ -8,6 +8,7 @@ import morgan from "morgan";
 import API from "./endpoints";
 import RUN from "./run";
 import TABLES from "./database/tables";
+import VERIFY_TOKEN from "./middlewares/verify-token";
 
 const app = express();
 const path = __dirname;
@@ -21,6 +22,7 @@ app.use(bodyParser.raw());
 app.use(helmet());
 app.use(morgan("dev"));
 app.use("/public", express.static(publicFolder));
+app.use("*", VERIFY_TOKEN);
 
 // Test root endpoint
 app.get("/", (req, res) => {
