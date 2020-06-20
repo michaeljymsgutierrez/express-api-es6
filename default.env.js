@@ -10,7 +10,8 @@ let ENV = {
   dbuser: "dbuser",
   dbname: "dbname",
   dbpass: "dbpass",
-  ssl_directory: null
+  ssl_directory: null,
+  secret_key: "secretkey"
 };
 
 // Override values here if necessary
