@@ -1,7 +1,7 @@
 // Initialize Database Tables
 
-import MYSQL from "../dbaccess";
-import QUERY from "../query";
+import MYSQL from "dbaccess";
+import QUERY from "query";
 
 const TABLES = {
   init: function() {
