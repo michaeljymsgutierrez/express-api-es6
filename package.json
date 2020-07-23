@@ -23,6 +23,7 @@
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/register": "^7.9.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.10"
   },
