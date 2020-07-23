@@ -2,7 +2,19 @@
 
 require("@babel/register")({
   presets: ["@babel/preset-env"],
-  plugins: ["@babel/plugin-transform-runtime"]
+  plugins: [
+    "@babel/plugin-transform-runtime",
+    [
+      "babel-plugin-module-resolver",
+      {
+        root: ["./"],
+        alias: {
+          dbaccess: "./database/dbaccess",
+          query: "./database/query"
+        }
+      }
+    ]
+  ]
 });
 
 module.exports = require("./server.js");
