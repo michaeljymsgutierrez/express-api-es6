@@ -1,7 +1,7 @@
 // DBAccess Module
 
 import mysql from "mysql";
-import ENV from "../../env";
+import ENV from "env";
 
 const MYSQL = {
   execute: function(query, param) {

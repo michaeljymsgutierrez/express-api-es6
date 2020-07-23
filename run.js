@@ -1,6 +1,6 @@
 import https from "https";
 import fs from "fs";
-import ENV from "./env";
+import ENV from "env";
 
 const RUN = {
   server: function(app) {
