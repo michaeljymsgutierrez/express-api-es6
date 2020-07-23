@@ -7,7 +7,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import API from "./endpoints";
 import RUN from "./run";
-import TABLES from "./database/tables";
+import TABLES from "tables";
 import VERIFY_TOKEN from "middlewares/verify-token";
 
 const app = express();

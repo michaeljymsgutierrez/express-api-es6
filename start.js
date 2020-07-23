@@ -12,6 +12,7 @@ require("@babel/register")({
           env: "./env",
           query: "./database/query",
           dbaccess: "./database/dbaccess",
+          tables: "./database/tables",
           middlewares: "./middlewares"
         }
       }
