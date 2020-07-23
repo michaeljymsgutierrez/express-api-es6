@@ -11,6 +11,7 @@ require("@babel/register")({
         alias: {
           env: "./env",
           run: "./run",
+          endpoints: "./endpoints",
           query: "./database/query",
           dbaccess: "./database/dbaccess",
           tables: "./database/tables",
