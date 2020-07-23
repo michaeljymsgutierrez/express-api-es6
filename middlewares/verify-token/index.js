@@ -1,7 +1,7 @@
 // Verify Token
 
 import jwt from "jsonwebtoken";
-import ENV from "../../env";
+import ENV from "env";
 
 const VERIFY_TOKEN = (req, res, next) => {
   const authorization = req.headers.authorization;
