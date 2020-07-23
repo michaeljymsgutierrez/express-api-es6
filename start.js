@@ -15,7 +15,8 @@ require("@babel/register")({
           queries: "./database/queries",
           dbaccess: "./database/dbaccess",
           tables: "./database/tables",
-          middlewares: "./middlewares"
+          middlewares: "./middlewares",
+          utils: "./utils"
         }
       }
     ]
