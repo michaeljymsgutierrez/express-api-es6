@@ -10,6 +10,7 @@ require("@babel/register")({
         root: ["./"],
         alias: {
           env: "./env",
+          run: "./run",
           query: "./database/query",
           dbaccess: "./database/dbaccess",
           tables: "./database/tables",
